@@ -1,0 +1,6 @@
+{
+  "name": "StudyShield",
+  "description": "Smart productivity and digital wellness companion for students with AI-powered focus mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
