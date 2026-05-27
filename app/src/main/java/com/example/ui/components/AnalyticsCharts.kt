@@ -78,6 +78,9 @@ fun WeeklyUsageChart(
         ) {
             val width = size.width
             val height = size.height
+            if (width <= 0f || height <= 0f) {
+                return@Canvas
+            }
 
             val gridLines = 4
             val gridSpacingY = height / (gridLines + 1)

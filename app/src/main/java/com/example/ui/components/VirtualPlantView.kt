@@ -41,6 +41,9 @@ fun VirtualPlantView(
 
         val width = size.width
         val height = size.height
+        if (width <= 0f || height <= 0f) {
+            return@Canvas
+        }
 
         val centerX = width / 2f
         val bottomY = height - 30f

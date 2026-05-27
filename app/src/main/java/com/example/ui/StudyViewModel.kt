@@ -266,7 +266,7 @@ class StudyViewModel(application: Application) : AndroidViewModel(application) {
     private suspend fun triggerEyeCareBreak() {
         _isEyeCareBreakShowing.value = true
         _eyeCareActiveCountdown.value = 20
-        while (_eyeCareActiveCountdown.value > 0) {
+        while (_eyeCareActiveCountdown.value > 0 && _isEyeCareBreakShowing.value) {
             delay(1000)
             _eyeCareActiveCountdown.value -= 1
         }
